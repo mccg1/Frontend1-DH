@@ -1,0 +1,40 @@
+header {
+    background-color:#E6E6E6;
+}
+h1{
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   color:#005677; 
+   text-align: center;
+   background-color:#E6E6E6;
+}
+
+footer{
+
+    text-align: center;
+    background-color: #005677;
+    color: #FFFFFF;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subtitles{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:#005677; 
+    text-align: left center;
+    background-color:#E6E6E6;
+    
+   
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.boldItalic{
+    font-weight: bold;
+    font-style: italic;
+}
