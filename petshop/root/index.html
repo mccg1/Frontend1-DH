@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">    
+    <title>PetShop</title>
+</head>
+<body>
+    <header>
+        <div class="bar-lenguages"> 
+            <label>Grandes ofertas en comederos</label>
+            <select class="bar-lenguages" id="lenguages">
+                <option>Español</option>
+                <option>English</option>
+            </select>
+            <select class="bar-lenguages" id="coin">
+                <option>ARG$</option>
+                <option>COP</option>
+            </select>
+            
+        </div>
+        <nav>
+            <img src="img/Logo.png" alt="logo">  
+            <ul>
+                <a href="#"><i class="fas fa-paw"></i>Categorías</a>
+                <a href="#"><i class="fas fa-paw"></i>Pets</a>
+                <a href="#"><i class="fas fa-paw"></i>Nosotros</a>
+                <a href="#"><i class="fas fa-paw"></i>Contactanos</a>
+            </ul>
+            
+        </nav>  
+    </header>
+    <main>
+        <section class="sectionWelcome">
+            <!-- <img src="img/bowl-and-pet-daities-on-green-background 1.png" alt="Imagen background"> -->
+            <div class="welcomeText">¡Es un placer tenerte aquí!</div>
+            <div class = "welcomeSubText">¡Comederos en descuento!</div>
+            <div><button class="buttonContact" type="button">COMEDEROS</button></div>
+        </section>
+        <section>
+            <img class="center" src="img/pawprint 1.png" alt="pawprint">
+            <h2>Productos Destacados</h2>
+            <h6 id="textUnderProducts">Comederos - Accesorios - Comida</h6>
+            <div class="center">
+                <article>
+                    <img class="cards" src="img/churrasquito.png" alt="juguete churrasquito">
+                    <p class="textDescrip">Juguete Churrasquito</p>
+                    <p class="price">$150</p>
+                </article>
+                <article>
+                    <img class="cards" src="img/comedero.png" alt="comedero">
+                    <p class="textDescrip">Comedero para perro</p>
+                    <p class="price">$250</p>  
+                </article>
+                <article>
+                    <img class="cards" src="img/Huesito.png" alt="huesito">
+                    <p class="textDescrip">Juguete Huesito</p>
+                    <p class="price">$650</p>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h4>Contáctanos</h4>
+            <form>
+                <label for="fullname">Nombre y Apellido</label><br>
+                <input type="text" id="fullname" name="fullname"><br>
+                <label for="email">Ingresá tu correo electrónico</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="phonenum">Teléfono</label><br>
+                <input type="text" id="phonenum" name="phonenum">
+            </form>
+            <span><button type="button">Resetear</button></span>
+            <span><button type="button">Enviar</button></span>
+        </section>
+
+    </main>
+    <footer>
+        <span>Todos los derechos reservados Front End</span>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/mccg1/Frontend1-DH" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+</body>
+</html>
