@@ -84,11 +84,16 @@ fa-paw{
     top: 334px;
 }
 .center{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     /* margin: auto; */
     padding-top: 2%;
+}
+
+article{
+    margin: auto;
 }
 h2{
     font-family: 'Roboto', sans-serif; 
