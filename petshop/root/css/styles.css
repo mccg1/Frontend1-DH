@@ -1,35 +1,57 @@
-.bar-lenguages{
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color:#000000;
     color: #F3F3F3;
+    height: 20px;
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    padding-right: 60px;
+    padding-left: 90px;
 }
+
+
+.top-bar-selectors{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color:#000000;
+    color: #F3F3F3;
+    
+}
+
 
 nav{
+    display: flex;
     background-color: #F0A83E;
     height: 62px;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 20px, 40px, 20px, 40px;*/
 }
 nav img{
-    position: absolute;
-    left: 20px;
-    top: 42px;
-}
-nav ul{
-    display: inline-block;
-    list-style-type: none;
-    position: absolute;
-    right: 20px;
-    top: 30px
+    height: 23px;
+    padding-left: 40px;
 }
 
-nav a{
-    color: white;
-    font-family: 'Roboto', sans-serif;
+
+nav ul li{
+    display: inline;
     font-size: 13px;
-    font-weight: 400; 
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif; 
+    list-style-type: none;
+    color: white;
     padding: 20px;
 }
+
 
 fa-paw{
     color:white;
@@ -37,9 +59,12 @@ fa-paw{
 
 .sectionWelcome{
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
-    display: block;
+    display: flex;
     height: 409px;
     background-size:cover;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 
 }
 
@@ -49,13 +74,9 @@ fa-paw{
     font-size: 30px;
     color:#3C2313;
     background-color: white;
-    text-align: center;
-    width: 365px;
-    height: 54px;
-    position: absolute;
-    right: 20px;
-    top: 246px;
     border-radius: 5px;
+    margin: 12px;
+    padding: 10px;
    
 }
 .welcomeSubText{
@@ -64,9 +85,8 @@ fa-paw{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    position: absolute;
-    right: 120px;
-    top: 303px;   
+    margin-right: 95px;
+  
 }
 .buttonContact{
     font-family: 'Roboto', sans-serif; 
@@ -79,30 +99,27 @@ fa-paw{
     text-align: center;
     font-size: 16px;
     line-height: 19px;
-    position: absolute;
-    right: 135px;
-    top: 334px;
-}
-.center{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin: auto; */
-    padding-top: 2%;
+    margin-right: 117px;
+
 }
 
-article{
-    margin: auto;
+.sectionProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    
 }
+
 h2{
     font-family: 'Roboto', sans-serif; 
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
     color:  #3C2313;
-    display: block;
-    text-align: center;
+    margin:20px;
+    
 }
 
 #textUnderProducts{
@@ -112,14 +129,16 @@ h2{
     font-size: 15px;
     line-height: 18px;
     color:  #666666;
-    display: block;
-    text-align: center;
-    padding-top: 0%;
+    margin: 0px;
+}
+
+.centerProducts{
+    display: flex;
+    margin: 49px;   
 }
 
 article{
-    display: inline-block;
-    padding: 20px;
+    margin: 20px;
 }
 
 .textDescrip{
@@ -129,9 +148,7 @@ article{
     line-height: 18px;
     color:  #3C2313;
     display: block;
-    text-align: center;
-    padding-top: 0%;
-    
+    text-align: center;    
 }
 .price{
     font-family: 'Roboto', sans-serif; 
@@ -141,7 +158,6 @@ article{
     color:  #F0A83E;
     display: block;
     text-align: center;
-    padding-top: 0%;
 }
 
 footer{
@@ -153,6 +169,174 @@ footer{
     background-color: #222222;
     color: white;
 }
+.sectionForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:75px;
+
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29.3px;  
+    margin-bottom: 20px; 
+}
+
+form input{
+    background-color:#3C2313;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    height: 40px;
+    width: 340px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.buttonReset{
+    height: 34px;
+    width: 110px;
+    border-radius: 15px;
+    background-color:#8A8787;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: white;
+    border-width: 0px;
+    margin-top: 41px;
+    margin-bottom: 75px;
+
+}
+.buttonEnviar{
+    height: 34px;
+    width: 110px;
+    border-radius: 15px;
+    background-color:#F0A83E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: white;
+    border-width: 0px;
+
+}
+
+.subscribeBottomBar{
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    
+}
+
+.subscribeBottomBarTex{
+    color:white;
+    display: flex;
+    align-items:center;
+    padding-left: 30px;
+}
+
+.texSubs{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    margin:10px;
+}
+
+.inputSubs{
+    background-color: white;
+    color:#A0A0A0;
+    width: 271px;
+    height: 40px;
+    border-radius: 15px;
+    border:0px;
+    padding-left: 8px;
+}
+
+.buttonSubs{
+    background-color: #3C2313;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0em;
+    width: 70px;
+    height: 34px;
+    border-radius: 15px;
+    border: 0px;
+    margin-right: 47px;
+    margin-left: 5px; 
+}
+
+.footeriInfoCont{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3C2313;
+}
+
+.footerInfoIconsCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px;
+}
+
+.footerInfoIconsDetail{
+    display: flex;
+    align-items: center;
+}
+
+.titlesFooter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+.sutitlesFooter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    color:#8A8787;
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.footerIcons{
+    margin-bottom: 25px;
+}
+
+.footerBottomBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
 
 fa-instagram{
     color:white;
@@ -163,3 +347,4 @@ fa-linkedin{
 fa-github{
     color:white;
 }
+
