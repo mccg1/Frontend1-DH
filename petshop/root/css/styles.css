@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
     margin:0px;
+    padding: 0px;
+    font-size: 62.5%;
 }
 
 .top-bar{
@@ -10,7 +12,7 @@
     background-color:#000000;
     color: #F3F3F3;
     height: 20px;
-    font-size: 10px;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding-right: 60px;
@@ -19,7 +21,7 @@
 
 
 .top-bar-selectors{
-    font-size: 10px;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background-color:#000000;
@@ -34,17 +36,24 @@ nav{
     height: 62px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
     /*padding: 20px, 40px, 20px, 40px;*/
 }
-nav img{
-    height: 23px;
-    padding-left: 40px;
+.top-logo{
+    width: 16.2vw;
+    height: auto;
+    padding-left: 3.9vw;
+}
+
+.menu-contracted-icon{
+    display: none;
+    padding-right: 10vw;
 }
 
 
 nav ul li{
     display: inline;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: 'Roboto', sans-serif; 
     list-style-type: none;
@@ -71,7 +80,7 @@ fa-paw{
 .welcomeText{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 3rem;
     color:#3C2313;
     background-color: white;
     border-radius: 5px;
@@ -83,8 +92,7 @@ fa-paw{
     font-family: 'Roboto', sans-serif; 
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
     margin-right: 95px;
   
 }
@@ -97,8 +105,7 @@ fa-paw{
     height: 49px;
     color: white;
     text-align: center;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
     margin-right: 117px;
 
 }
@@ -115,8 +122,8 @@ fa-paw{
 h2{
     font-family: 'Roboto', sans-serif; 
     font-weight: 700;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 4rem;
+    text-align: center;
     color:  #3C2313;
     margin:20px;
     
@@ -126,14 +133,16 @@ h2{
 
     font-family: 'Roboto', sans-serif; 
     font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 1.5rem;
+    word-spacing: 1em;
     color:  #666666;
     margin: 0px;
 }
 
 .centerProducts{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 49px;   
 }
 
@@ -144,8 +153,7 @@ article{
 .textDescrip{
     font-family: 'Roboto', sans-serif; 
     font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 1.5rem;
     color:  #3C2313;
     display: block;
     text-align: center;    
@@ -153,8 +161,7 @@ article{
 .price{
     font-family: 'Roboto', sans-serif; 
     font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 1.5rem;
     color:  #F0A83E;
     display: block;
     text-align: center;
@@ -163,8 +170,7 @@ article{
 footer{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 10px;
-    line-height: 11,72px; 
+    font-size: 1rem; 
     text-align: center;
     background-color: #222222;
     color: white;
@@ -173,14 +179,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom:75px;
-
 }
 h4{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 29.3px;  
+    font-size: 2.5rem;
     margin-bottom: 20px; 
 }
 
@@ -188,8 +191,8 @@ form input{
     background-color:#3C2313;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 9px;
+    font-weight: 400;
+    font-size: 0.9rem;
     height: 40px;
     width: 340px;
     border-radius: 15px;
@@ -202,10 +205,9 @@ form input{
     border-radius: 15px;
     background-color:#8A8787;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 19px;
     letter-spacing: 0em;
     color: white;
     border-width: 0px;
@@ -219,10 +221,9 @@ form input{
     border-radius: 15px;
     background-color:#F0A83E;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 19px;
     letter-spacing: 0em;
     color: white;
     border-width: 0px;
@@ -232,6 +233,7 @@ form input{
 .subscribeBottomBar{
     background-color: #F0A83E;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 60px;
@@ -242,23 +244,29 @@ form input{
     color:white;
     display: flex;
     align-items:center;
-    padding-left: 30px;
+    padding-left: 2.7vw;
 }
 
 .texSubs{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 23px;
     letter-spacing: 0em;
     margin:10px;
+}
+
+.subsInputCont{
+    display: flex;
+    align-items:center;
+    padding-left: 3.2vw;
 }
 
 .inputSubs{
     background-color: white;
     color:#A0A0A0;
-    width: 271px;
+    font-size: 00.9rem;
+    width: 25vw;
     height: 40px;
     border-radius: 15px;
     border:0px;
@@ -269,10 +277,9 @@ form input{
     background-color: #3C2313;
     color:white;
     font-family: 'Roboto', sans-serif;
-    font-size: 9px;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 11px;
     letter-spacing: 0em;
     width: 70px;
     height: 34px;
@@ -304,10 +311,9 @@ form input{
 
 .titlesFooter{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 0px;
@@ -315,10 +321,9 @@ form input{
 }
 .sutitlesFooter{
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 12px;
     letter-spacing: 0em;
     color:#8A8787;
     margin-top: 0px;
@@ -331,11 +336,16 @@ form input{
     margin-bottom: 25px;
 }
 
+.footerLogo{
+    margin:10px ;
+}
+
 .footerBottomBar{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 20px;
+    font-size: 1.2rem;
 }
 
 fa-instagram{
@@ -348,3 +358,59 @@ fa-github{
     color:white;
 }
 
+@media(max-width: 680px){
+    .top-bar{
+        display: none;
+    }
+
+    .top-logo{
+        width: 35vw;
+        padding-left: 10vw;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    .menu-contracted-icon{
+        display:inline-flex;
+    }
+
+    .welcomeText{
+        font-size: 2.5rem;
+    }
+
+    #textUnderProducts{
+        font-size: 1.3rem;
+
+    }
+
+    .subscribeBottomBar{
+        height: 101px;   
+    }
+
+    .inputSubs{
+        width: 63vw;
+    }
+
+    .buttonSubs{
+        width:24vw ;
+    }
+
+    .footeriInfoCont{
+        flex-direction: column-reverse;
+    }
+
+    .footerBottomBar{
+        font-size: 1.3em; ;
+    }
+
+    .buttonReset{
+        width: 48vw;
+    }
+
+    .buttonEnviar{
+        width: 48vw;
+    }
+
+}
